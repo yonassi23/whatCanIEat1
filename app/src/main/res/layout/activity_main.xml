@@ -8,7 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.coral.whatcanieat.MainActivity">
+    tools:context="com.coral.whatcanieat.MainActivity"
+    android:background="@drawable/res">
 
     <TextView
         android:id="@+id/txt"
@@ -16,36 +17,35 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="What Can I  Eat"
-android:layout_marginTop="24dp"
-        android:textSize="24sp"
+        android:layout_marginTop="80dp"
+        android:textSize="45sp"
         android:textStyle="bold"
-        />
-
+        android:textColor="#ffff"
+        android:alpha="0.8"/>
     <Button
         android:id="@+id/loginTxt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txt"
+        style="@style/lala"
         android:text="Login"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="35dp"
         android:gravity="center"
-        android:paddingTop="10dp"
         android:onClick="Sign"
-
-
-        />
+        android:alpha="0.8"
+        android:layout_below="@+id/txt"
+        android:background="@drawable/round_corners"
+        android:layout_centerHorizontal="true"/>
 
     <Button
         android:id="@+id/Registration"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/lala"
         android:gravity="center"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="25dp"
         android:text="menu"
+        android:onClick="Registration"
+        android:alpha="0.8"
         android:layout_below="@+id/loginTxt"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="Registration"/>
+        android:layout_alignLeft="@+id/loginTxt"
+        android:layout_alignStart="@+id/loginTxt"
+        android:background="@drawable/round_corners"/>
 
 
 </RelativeLayout>

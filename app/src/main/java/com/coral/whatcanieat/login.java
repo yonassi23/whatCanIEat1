@@ -21,8 +21,8 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        email = (EditText)findViewById(R.id.nameLog);
-        pass = (EditText)findViewById(R.id.passLog);
+        email = (EditText)findViewById(R.id.email);
+        pass = (EditText)findViewById(R.id.pass);
         Backendless.initApp( this,
                 Defaults.APPLICATION_ID,
                 Defaults.API_KEY);

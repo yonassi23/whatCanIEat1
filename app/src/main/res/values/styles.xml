@@ -9,4 +9,10 @@
 
     </style>
 
+
+    <style name="lala">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
 </resources>
